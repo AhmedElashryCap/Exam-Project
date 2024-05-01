@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="page icon" href="./Imgs/iti-logo.png" type="icon">
+    <title>Quiz Wuiz</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./Css/EaxmStyle.css" />
+  </head>
+  <body>
+    <img src="./Imgs/logo.png" alt="img" id="img" class="img" />
+    <h1 id="title">Final Exam</h1>
+    <br/>
+    <div id="Time">
+      <h2 class="text">"Time for Exam"</h2>
+      <div id="progress">
+        <div id="bar"></div>
+      </div>
+      <p class="text" id="loading"></p>
+    </div>
+
+    <!-- quiz-container -->
+    <div id="quiz-container">
+      <!-- question container -->
+      <div class="questions">
+        <h2 id="question"></h2>
+        <ol type="A">
+          <li class="option">
+            <span id="option0" onclick="calcScore(this)"></span>
+          </li>
+          <li class="option">
+            <span id="option1" onclick="calcScore(this)"></span>
+          </li>
+          <li class="option">
+            <span id="option2" onclick="calcScore(this)"></span>
+          </li>
+          <li class="option">
+            <span id="option3" onclick="calcScore(this)"></span>
+          </li>
+        </ol>
+      </div>
+      <!-- markList container -->
+      <div class="marklist">
+        <span class="markword"></span>
+        
+        <h4 id="stat"></h4>
+      </div>
+      
+      <div class="buttons">
+        <button type="button" class="back">Back</button>
+        <button type="button" class="qusnum"></button>
+        <button type="button" class="next">Next</button>
+        <button type="button" class="mark">Mark</button
+        ><br /><br /><br /><br /><br />
+        <button type="button" class="submit">submit</button>
+      </div>
+    </div>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+      <img src="./Imgs/logo.png" alt="" />
+      <h2 id="score-title">Your Result is :</h2>
+      <h2 id="score"></h2>
+      <button type="button" id="check-answer" onclick="checkAnswer()">
+        Check Answers
+      </button>
+    </div>
+
+    <!-- answers section -->
+    <div id="answerBank">
+      <h2>Corrcet Answers :</h2>
+      <ol type="1" id="answers"></ol>
+     
+    </div>
+
+    <!-- javascript file source -->
+    <script src="./JavaScript/MainPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signin Page</title>
+        <link rel="stylesheet" href="./Css/RegisterationStyle1.css">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack() {
+              window.history.forward();
+            }
+          </script>
+    </head>
+    <body>
+        <div class="container">
+            <p>Welcome to Signin Page</p>
+            
+            <form id="form" onsubmit = ""  method="get" action="FinalExam.html">
+                
+                
+                <img src="Imgs/mail.png" alt="mail">
+                <label for="email" >Email</label>
+                <input type="text" id="email" placeholder="Enter Your Email" class="intext" ><br>
+                <span id="emailError" class="errorMsg">*Email should be in this form name@.com</span><br>
+                
+                <img src="Imgs/lock.png" alt="password">
+                <label for="email" >Pass</label>
+                <input type="password" placeholder="Enter Your Password" id="pass"><br>
+                <span id="passError" class="errorMsg">*Password should be at laest 8 char or num</span>
+                
+                <div>
+                    
+                    <input type="submit" name="subBtn" id="submitbtn" value="Register Now" >
+                </div>
+            </form>
+        </div>
+        <script src="./JavaScript/Page2.js"></script>
+
+</body>
+</html>

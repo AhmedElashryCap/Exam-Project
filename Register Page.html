@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/RegisterationStyle.css">
+    <title>Register form</title>
+    
+        
+      <script type="text/javascript">
+        function disableBack() { window.history.forward(); }
+        setTimeout("disableBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <p>Welcome to SignUp Page</p>
+        
+        <form id="form" onsubmit = "" method="get" action="SigninPage.html" >
+            <img src="Imgs/user.png" alt="user">
+            <label for="username" >Name</label>
+            <input type="text" id="firstname" placeholder="FirstName" class="intext" ><br>
+            <span id="nameError1" class="errorMsg">*Empty or Enter Alphabet Only*</span><br>
+              
+              <img src="Imgs/user.png" alt="user">
+              <label for="username" >Name</label>
+            <input type="text" id="lastname" placeholder="LastName" class="intext" ><br>
+            <span id="nameError2" class="errorMsg">*Empty or Enter Alphabet Only*</span><br>
+                 
+                 <img src="Imgs/user.png" alt="age">
+              <label for="age" >Age</label>
+            <input type="text" id="age" placeholder="Type Your Age" class="intext" ><br>
+            <span id="ageError" class="errorMsg">*Enter Number, Age must be between 10 & 60 years</span><br>
+          
+
+            <img src="Imgs/mail.png" alt="mail">
+            <label for="email" >Email</label>
+            <input type="text" id="email" placeholder="Type Your Email" class="intext" ><br>
+            <span id="emailError" class="errorMsg">*Email should be in this form name@.com</span><br>
+            
+            <img src="Imgs/lock.png" alt="password">
+            <label for="email" >Pass</label>
+            <input type="password" placeholder="Type Your Password" id="pass1" minlength="8"><br>
+            <span id="Error1" class="errorMsg">*Password should be at laest 8 char or num</span><br>
+            <img src="Imgs/lock.png" alt="password">
+            <label for="email" >Pass</label>
+            <input type="password" placeholder="Retype Your Passowrd" id="pass2" ><br>
+            <span id="Error2" class="errorMsg">*Password should be at laest 8 char or num</span><br>
+            <div>
+            
+                <input type="submit" name="subBtn" id="submitbtn" value="Register Now" >
+            </div>
+        </form>
+    </div>
+    
+    
+    <script src="./JavaScript/Page1.js"></script>
+</body>
+
+</html>
