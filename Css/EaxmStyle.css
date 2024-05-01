@@ -5,7 +5,7 @@
 }
 body{
     font-family: sans-serif;
-    background: linear-gradient(115deg, rgba(101,151,209,0.8),rgba(202,102,211,0.5));
+    background: linear-gradient(115deg, rgba(72, 206, 124, 0.8),rgba(202,102,211,0.5));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@ img{
     height: 40px;
     position: relative;
     background-color: #ddd;
+    border-radius: 15px;
   }
   
   #bar {
@@ -33,6 +34,7 @@ img{
     width: 10px;
     height: 40px;
     position: absolute;
+    border-radius: 15px;
   }
   
   #loading {
@@ -75,8 +77,6 @@ img{
     height: 75%;
     gap: 15px;
     grid-template-areas: "main main main main main main main main main main side side "; }      /*to dirction mark list to right */
-    /* grid-template-areas: "side side main main main main main main main main main main "; */  /*to dirction mark list to left*/
-
 #question{
     margin-bottom: 1rem;
 }
@@ -120,8 +120,7 @@ button{
     outline: none;
     font-size: 1.5rem;
     border-radius: 1.5rem;
-    /* color: rgba(93,53,156,0.98); */
-    background: rgba(161,177,19,0.82);
+    background: rgba(74, 181, 127, 0.82);
     
 }
 
